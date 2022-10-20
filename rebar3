@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+## Rebar3 3.15.2
+VSN=${VSN:-3.15.2}
+erl -pz /home/tme/.cache/rebar3/vsns/${VSN}/lib/*/ebin +sbtu +A1 -noshell -boot start_clean -s rebar3 main $REBAR3_ERL_ARGS -extra "$@"
